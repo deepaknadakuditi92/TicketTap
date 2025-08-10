@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TicketTap*</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎬 TicketTap*</h1>
+    <p>Book your movie seats in seconds!</p>
+  </header>
+
+  <main>
+    <section class="movie-select">
+      <label for="movie">Select Movie:</label>
+      <select id="movie">
+        <option value="10">Inception ($10)</option>
+        <option value="12">Interstellar ($12)</option>
+        <option value="8">Coco ($8)</option>
+        <option value="9">Avengers ($9)</option>
+      </select>
+    </section>
+
+    <section class="seating">
+      <div class="screen">Screen</div>
+      <div class="row">
+        <div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat occupied"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div><div class="seat occupied"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat occupied"></div><div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div><div class="seat"></div><div class="seat occupied"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div><div class="seat"></div>
+      </div>
+    </section>
+
+    <section class="summary">
+      <p>Selected Seats: <span id="count">0</span></p>
+      <p>Total Price: $<span id="total">0</span></p>
+      <button id="bookBtn">Book Now</button>
+      <p id="confirmation" class="confirmation-msg"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TicketTap*. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
